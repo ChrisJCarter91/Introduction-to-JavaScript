@@ -4,18 +4,18 @@
 const votingAge = 18;
 
 // if(votingAge >= 18) {
-//     console.log("true");
+//     return("true");
 // }
 
 function canVote(age){
     if(age >= votingAge){
-    console.log("true")
+    return("true")
 } else {
-    console.log("false")
+    return("false")
 };
 }
 
-// canVote(12);
+// console.log(canVote(12));
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
@@ -38,10 +38,10 @@ console.log(Number(x));
 
 
 function multiply(a, b){
-    console.log(a * b);
+    return(a * b);
 };
 
-multiply(15, 2);
+console.log(multiply(15, 2));
 
 
 /************************************************************** Task 2 **************************************************************/
@@ -53,7 +53,7 @@ function dogYears(age){
     return (`You are ${age * 7} years old in dog years`)
 };
 
-dogYears(12);
+console.log(dogYears(12));
 
 
 /************************************************************** Task 3 **************************************************************/
