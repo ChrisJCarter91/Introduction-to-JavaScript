@@ -73,10 +73,20 @@ dogYears(12);
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-  
 
 
+function dogfeeder(weight, age){
+    return age >= 1 && weight <=5 ? .05 * weight
+    : age >= 1 && (weight >= 6 && weight <= 10) ? .04 * weight
+    : age >= 1 && (weight >= 11 && weight <= 15) ? .03 * weight
+    : age >= 1 && weight > 15 ? .02 * weight
+    : age >= .2 && age < .4 ? .1 * weight
+    : age >= .4 && age < .7 ? .05 * weight
+    : age >= .7 && age < 1 ? .04 * weight
+    : "not enough info";
+};
 
+console.log(dogfeeder(15, 1));
 
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
@@ -85,8 +95,8 @@ dogYears(12);
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
-  
+
+
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
@@ -97,7 +107,7 @@ dogYears(12);
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
+
 
 
 
@@ -106,7 +116,7 @@ dogYears(12);
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
+
 
 
 
@@ -119,10 +129,10 @@ dogYears(12);
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
 
-  
-  
+
+
+
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
